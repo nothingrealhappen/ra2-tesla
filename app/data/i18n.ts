@@ -61,7 +61,7 @@ export const translations: Record<Language, Translation> = {
     hero: {
       title: 'Tesla Lock Sounds',
       subtitle: 'Red Alert 2 Edition',
-      description: 'Browse 96 iconic RA2 sound effects. Download for free and make your Tesla lock with style!',
+      description: 'Browse 404 iconic RA2 sound effects. Download for free and make your Tesla lock with style!',
     },
   },
   cn: {
@@ -92,7 +92,7 @@ export const translations: Record<Language, Translation> = {
     hero: {
       title: '特斯拉锁车音效',
       subtitle: '红色警戒2版本',
-      description: '浏览96个经典RA2音效。免费下载，让你的特斯拉锁车更有范儿！',
+      description: '浏览404个经典RA2音效。免费下载，让你的特斯拉锁车更有范儿！',
     },
   },
 };

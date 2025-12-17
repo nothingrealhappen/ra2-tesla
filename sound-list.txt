@@ -1,14 +1,29 @@
+2000-volts-coming-up.mp3
+a-little-c-4-knocking-at-your-door (1).mp3
 a-little-c-4-knocking-at-your-door.mp3
+a-little-flak (1).mp3
 a-little-flak.mp3
+a-new-comrade-joins-us (1).mp3
 a-new-comrade-joins-us.mp3
+acknowledged (1).mp3
 acknowledged.mp3
+adios-amigos (1).mp3
 adios-amigos.mp3
+agent-in-the-field (1).mp3
 agent-in-the-field.mp3
+agent-ready (1).mp3
 agent-ready.mp3
+ahkakaka (1).mp3
 ahkakaka.mp3
+air-transport-ready (1).mp3
 air-transport-ready.mp3
+aircraft-reporting (1).mp3
+aircraft-reporting (2).mp3
+aircraft-reporting (3).mp3
 aircraft-reporting.mp3
+airship-ready (1).mp3
 airship-ready.mp3
+all-fired-up (1).mp3
 all-fired-up.mp3
 all-right.mp3
 allied-ship-reporting.mp3
@@ -21,9 +36,14 @@ assignment-received.mp3
 assignment-sir.mp3
 at-least-i-have-job.mp3
 at-your-service.mp3
+attacking (1).mp3
+attacking (2).mp3
+attacking (3).mp3
 attacking.mp3
+audio.mp3
 aye-commander.mp3
 ayy.mp3
+bail-out (1).mp3
 bail-out.mp3
 battle-stations.mp3
 bearing-set.mp3
@@ -44,54 +64,394 @@ changing-position.mp3
 changing-vector.mp3
 channel-clear.mp3
 charging-up.mp3
+check-out-the-view.mp3
+checking-connection.mp3
+checking-designs.mp3
+clear-out-the-place.mp3
 clearing-a-path.mp3
+close-and-fire.mp3
 closing-in.mp3
+closing-on-target.mp3
+clouds-of-death.mp3
+command-received.mp3
+commander.mp3
+commencing-assault.mp3
+commencing-shock-therapy.mp3
+completing-circuit.mp3
+comrade.mp3
+conscript-reporting.mp3
+course-set.mp3
+cover-me (1).mp3
+cover-me.mp3
+cutting-him-down.mp3
+da-russian-yes.mp3
+da.mp3
+deconstructing.mp3
+desolator-breathing.mp3
+desolator-ready.mp3
 destination-commander.mp3
+destination.mp3
+diggin-in.mp3
+disguise-ready.mp3
+do-i-have-to.mp3
+don-t-play-with-matches.mp3
+don-t-wait-up-for-me.mp3
+double-time.mp3
+driver-up.mp3
 eagle-squadron.mp3
+easy-target.mp3
 ehahahahahahah.mp3
+eject-eject (1).mp3
+eject-eject.mp3
+electrician-in-the-field.mp3
 electrodes-ready.mp3
+eliminate-them.mp3
+ememy-in-my-sights.mp3
+encountering-enemy.mp3
+enemy-sighted.mp3
+enemy-spotted.mp3
+engineering (1).mp3
+engineering.mp3
+engines-engaged.mp3
+examining-diagrams.mp3
+executing-assignment.mp3
+fastest-gun-in-the-west.mp3
 find-a-hot-spot.mp3
+fire-at-will.mp3
+fire-on-site.mp3
+fire-zone-confirmed.mp3
 firing.mp3
+flak-attack.mp3
+flak-trooper-reporting.mp3
+for-home-country.mp3
+for-mother-russia.mp3
+for-my-people.mp3
+for-romanov.mp3
+for-the-common-good.mp3
+for-the-republic.mp3
+for-the-union.mp3
+fuel-tanks-are-filled.mp3
+get-me-outta-here (1).mp3
+get-me-outta-here.mp3
+gi-cry.mp3
+give-me-a-job.mp3
+give-me-a-plan.mp3
+give-me-a-target.mp3
 going-down.mp3
+going-to-source.mp3
+gonna-die-in-ma-boots.mp3
+good-to-go.mp3
+got-a-clear-view-sir.mp3
 got-a-steady-flow.mp3
+got-it.mp3
+got-the-plans-right-here.mp3
+gotcha.mp3
 ground-yourselves.mp3
+gunner-in-position.mp3
 happy-birthday.mp3
+he-belongs-to-us.mp3
+he-s-a-dead-man.mp3
 he-s-a-threat.mp3
+he-s-fried.mp3
+he-s-got-no-place-to-hide.mp3
+he-s-in-my-scope.mp3
+helium-mix-optimal.mp3
+help-me-romanov.mp3
+here-comes-the-sun.mp3
+here-hold-this.mp3
+here-s-a-hot-papaya.mp3
+here-s-some-fancy-shootin.mp3
+hey-cut-it-out.mp3
+hey-partner.mp3
+high-speed-low-drag.mp3
+his-mind-is-weak.mp3
+hittin-the-trail.mp3
+hoo-rah.mp3
+how-about-a-swim.mp3
+how-about-a-target.mp3
+how-about-some-action (1).mp3
+how-about-some-action.mp3
+huh.mp3
 i-aint-yeller.mp3
+i-am-going.mp3
+i-am-prepared-to-die.mp3
+i-am-unarmed.mp3
+i-can-go-anywhere.mp3
+i-can-see-him.mp3
+i-can-t-see-through-flak.mp3
+i-cannot-kiss-on-them.mp3
+i-don-t-have-time-for-this.mp3
+i-go-freely.mp3
+i-got-him (1).mp3
 i-got-him.mp3
+i-have-the-information.mp3
 i-have-the-tools.mp3
 i-hear-and-obey.mp3
+i-just-bought-this-outfit.mp3
+i-knew-this-would-happen.mp3
 i-know-your-thoughts.mp3
+i-like-a-man-in-uniform.mp3
+i-ll-be-late-for-bread-line.mp3
+i-ll-do-it.mp3
+i-ll-take-the-bullet.mp3
+i-ll-take-the-high-road.mp3
+i-lost-a-bomb-do-you-have-it.mp3
+i-love-to-camp.mp3
+i-m-being-bushwacked.mp3
+i-m-cold.mp3
+i-m-going (1).mp3
+i-m-going (2).mp3
+i-m-going.mp3
+i-m-gone.mp3
+i-m-hit.mp3
+i-m-into-close.mp3
+i-m-just-a-woman.mp3
 i-m-just-one-man.mp3
+i-m-losing-compression.mp3
+i-m-on-it.mp3
+i-m-there.mp3
+i-m-unarmed.mp3
+i-m-your-man.mp3
 i-need-support.mp3
+i-see-him.mp3
+i-shall-avenge-us.mp3
+i-ve-been-discovered.mp3
+i-ve-been-spotted.mp3
+i-ve-got-the-knowledge.mp3
+i-was-only-kidding.mp3
+i-will-do-as-you-say.mp3
+i-will-go.mp3
+i-won-t-be-late.mp3
+if-i-must.mp3
+if-you-say-so.mp3
 igniting-boosters.mp3
+in-transit.mp3
+indeed.mp3
+instruments-locked-on.mp3
+is-this-a-real-gun.mp3
+it-is-my-duty.mp3
+it-is-safe.mp3
+it-s-too-quiet-here.mp3
+it-will-be-a-silent-spring.mp3
+it-will-be-a-smoking-crater.mp3
+ivan-s-not-home.mp3
+just-get-me-close-enough.mp3
+just-give-me-a-clear-view.mp3
+kaboom.mp3
+kirov-reporting (1).mp3
+kirov-reporting.mp3
+korea-s-finest.mp3
+let-s-do-it.mp3
+let-s-get-it-on.mp3
+let-s-get-outta-here.mp3
+let-s-go.mp3
+let-s-heat-them-up.mp3
+let-s-make-a-delivery.mp3
 let-s-make-an-oasis-of-death.mp3
+let-s-mosey.mp3
+let-s-take-him-out.mp3
+let-the-juice-flow.mp3
+like-my-belt-buckle.mp3
+like-my-new-haircut.mp3
+like-the-wind.mp3
+location-confirmed.mp3
+locked-and-loaded.mp3
+look-deeply-into-my-eyes.mp3
+lz-is-hot.mp3
+main-engines-engaged.mp3
+make-it-glow.mp3
+maneuver-props-engaged.mp3
 maneuvers-in-progress.mp3
 mayday-mayday.mp3
+mercury-rising.mp3
+mission-sir.mp3
 mommy.mp3
+movin-out.mp3
+moving (1).mp3
+moving (2).mp3
+moving-out (1).mp3
+moving-out (2).mp3
+moving-out-boss.mp3
 moving-out.mp3
+moving.mp3
+my-command-is-your-wish.mp3
+my-feet-hurt.mp3
+my-rocket-s-hit.mp3
+my-truck-is-loaded.mp3
+navigating.mp3
+navigation-systems-ready.mp3
+need-a-lift.mp3
+need-a-repair.mp3
+need-a-smuggler.mp3
+need-an-escort.mp3
+never-existed.mp3
+no-rest-for-soviet-woman.mp3
+no-witnesses.mp3
+obtaining-intelligence.mp3
+ok.mp3
+on-my-way (1).mp3
+on-my-way (2).mp3
+on-my-way (3).mp3
+on-my-way.mp3
+on-our-way-sir.mp3
+on-the-move.mp3
+one-way-trip.mp3
+operation-underway.mp3
+order-received.mp3
+orders-comrade.mp3
+orders.mp3
+outstanding.mp3
+pick-a-spot.mp3
 pick-em-up-set-em-down.mp3
+pilot-reporting.mp3
+predictable.mp3
+proceeding-to-vantage-point.mp3
+psychic-ready.mp3
 pushing-away.mp3
+reactor-ready.mp3
+ready (1).mp3
 ready-comrade.mp3
+ready-for-meltdown.mp3
+ready-to-draw.mp3
+ready-to-infiltrate.mp3
+ready-to-roll.mp3
+ready-to-soar.mp3
+ready-to-strike.mp3
+ready.mp3
+red-alert-2-sounds-sound (1).mp3
+red-alert-2-sounds-sound (2).mp3
+red-alert-2-sounds-sound (3).mp3
+red-alert-2-sounds-sound (4).mp3
+red-alert-2-sounds-sound (5).mp3
+red-alert-2-sounds-sound (6).mp3
+red-alert-2-sounds-sound.mp3
+reinforcements.mp3
 removing.mp3
+ridin-high.mp3
+right-away-sir.mp3
+rockets-in-the-sky.mp3
+rubber-shoes-in-motion.mp3
+rudder-set-for-new-heading.mp3
+run-for-cover.mp3
+safety-first-sir.mp3
 scanning-perimeter.mp3
+scorched-earth.mp3
+seal-ready.mp3
 secret-service-here.mp3
+securing-position.mp3
+securing-the-area.mp3
 select-menu-ra2.mp3
+setting-new-course.mp3
 settling-in.mp3
+shake-it-baby.mp3
+she-doesn-t-belong-here.mp3
+she-s-going-to-blow.mp3
+ship-reporting.mp3
+shoot-to-kill.mp3
+show-me-the-way.mp3
+sir-yes-sir.mp3
+sniper-ready.mp3
+special-delivery.mp3
+speed-to-full.mp3
+spread-the-doom.mp3
+squared-away-sir.mp3
+standing-by (1).mp3
+standing-by.mp3
+steady-as-she-goes.mp3
+studying-blueprints.mp3
+surging-forward.mp3
+tagged-for-extinction.mp3
+take-me-back-to-havana.mp3
+taking-him-out.mp3
+tanya-laugh.mp3
+target-acquired.mp3
+target-sighted (1).mp3
+target-sighted.mp3
+tell-me-your-wish.mp3
 tesla-suit-ready.mp3
 the-end-is-near.mp3
+the-mind-is-quicker-than-the-eye.mp3
+there-goes-the-neighborhood.mp3
+there-s-no-resistance.mp3
+there-s-too-much-flak.mp3
+they-found-me-out.mp3
 they-re-history.mp3
+they-re-shooting-me.mp3
+they-won-t-see-us-coming.mp3
 this-gun-is-heavy.mp3
 this-is-scary.mp3
+this-is-too-easy.mp3
+this-will-be-messy.mp3
+thoughts-received.mp3
+thrusters-engaged.mp3
+time-for-a-showdown.mp3
 tools-ready.mp3
 tour-underway.mp3
+traitors-must-be-eliminated.mp3
+undercover.mp3
+unit-reporting.mp3
 up-and-over.mp3
 vamos-muchachos.mp3
+varmit-shot-me.mp3
+vehicle-ready.mp3
+vehicle-reporting.mp3
+vessel-ready.mp3
+visibility-clear.mp3
+waiting-orders (1).mp3
+waiting-orders.mp3
+watch-my-6.mp3
+watch-out-for-the-bumps.mp3
+we-are-being-attacked.mp3
+we-have-em-on-radar.mp3
+we-must-revolt.mp3
 we-re-being-attacked.mp3
+we-re-going-down (1).mp3
+we-re-going-down.mp3
+we-re-going-in.mp3
 we-re-losing-altitude.mp3
+we-re-pinned-down.mp3
+we-will-bury-them.mp3
 we-will-have-the-power-up-in-30-seconds-sir.mp3
 weapon-ready.mp3
+westwood-proudly-presents-command-and-conquer.wav
+what-a-society.mp3
+what-are-your-conditions.mp3
+what-do-you-want.mp3
+what-is-it.mp3
+what-s-over-here.mp3
+what-s-your-clearance-level.mp3
+what-s-your-request.mp3
+what-should-i-do.mp3
+where-s-my-horse.mp3
+where-s-the-party.mp3
+where-should-i-go.mp3
+who-s-your-daddy.mp3
+why-don-t-you-drive.mp3
+wilco.mp3
+will-have-the-power-up-in-30-seconds-sir.mp3
+will-i-get-hurt.mp3
+will-you-watch-my-children.mp3
+without-a-trace.mp3
+yeah (1).mp3
+yeah (2).mp3
 yeah-baby.mp3
+yeah-ha.mp3
+yeah-what-s-that.mp3
+yeah.mp3
+yes (1).mp3
+yes-commander (1).mp3
+yes-commander (2).mp3
+yes-commander (3).mp3
 yes-commander.mp3
+yes-comrade.mp3
+yes-of-course.mp3
+yes-sir (1).mp3
+yes-sir.mp3
+yes.mp3
+you-are-sure.mp3
+you-bet.mp3
+you-got-an-order.mp3
+you-got-it.mp3
+your-mind-is-clear.mp3
 your-wish.mp3
 

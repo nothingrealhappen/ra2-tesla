@@ -12,7 +12,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export const meta: MetaFunction = () => {
   return [
     { title: "RA2 Tesla Lock Sound - Download Red Alert 2 Sound Effects for Your Tesla" },
-    { name: "description", content: "Browse 96 iconic Red Alert 2 sound effects. Download for free and make your Tesla lock with style!" },
+    { name: "description", content: "Browse 404 iconic Red Alert 2 sound effects. Download for free and make your Tesla lock with style!" },
   ];
 };
 
