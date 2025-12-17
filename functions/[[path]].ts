@@ -5,5 +5,5 @@ import * as build from "../build/server/index.js";
 
 export const onRequest = createPagesFunctionHandler({
   build,
-  getLoadContext: (context) => ({ env: context.env }),
+  getLoadContext: (context) => ({ cloudflare: context }),
 });
