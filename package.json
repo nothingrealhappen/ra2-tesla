@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "remix vite:dev",
     "build": "remix vite:build",
+    "postbuild": "cp -r functions build/client/",
     "start": "wrangler pages dev ./build/client",
     "deploy": "npm run build && wrangler pages deploy ./build/client",
     "typecheck": "tsc"

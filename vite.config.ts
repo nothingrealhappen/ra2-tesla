@@ -16,11 +16,17 @@ export default defineConfig({
         v3_relativeSplatPath: true,
         v3_throwAbortReason: true,
       },
+      serverBuildFile: "index.js",
     }),
   ],
   resolve: {
     alias: {
       "~": resolve(__dirname, "./app"),
+    },
+  },
+  ssr: {
+    resolve: {
+      conditions: ["workerd", "worker", "browser"],
     },
   },
 });
