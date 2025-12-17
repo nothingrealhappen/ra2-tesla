@@ -18,7 +18,13 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(pnpm run deploy)"
+      "Bash(pnpm run deploy)",
+      "Bash(cat:*)",
+      "Bash(node generate-sounds.js:*)",
+      "Bash(node generate-sounds.cjs:*)",
+      "Bash(node:*)",
+      "Bash(npx tsc:*)",
+      "Bash(pnpm run build:*)"
     ]
   }
 }

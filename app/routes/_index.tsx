@@ -1,5 +1,7 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
-import { useState } from "react";
+import type { MetaFunction, LoaderFunctionArgs } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
+import { useLoaderData, useFetcher } from "@remix-run/react";
+import { useState, useEffect } from "react";
 import { useLanguage } from "~/hooks/useLanguage";
 import { useAudioPlayer } from "~/hooks/useAudioPlayer";
 import { sounds } from "~/data/sounds";
@@ -16,13 +18,67 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export async function loader({ context }: LoaderFunctionArgs) {
+  try {
+    const kv = context.cloudflare.env.SOUND_RANKINGS;
+
+    // Fetch votes for all sounds
+    const votesPromises = sounds.map(async (sound) => {
+      const key = `vote:${sound.id}`;
+      const votes = await kv.get(key);
+      return {
+        soundId: sound.id,
+        votes: votes ? parseInt(votes, 10) : 0,
+      };
+    });
+
+    const allVotes = await Promise.all(votesPromises);
+
+    // Create a map for easier lookup
+    const votesMap: Record<number, number> = {};
+    allVotes.forEach(({ soundId, votes }) => {
+      votesMap[soundId] = votes;
+    });
+
+    return json({ votesMap });
+  } catch (error) {
+    console.error("Loader error:", error);
+    return json({ votesMap: {} });
+  }
+}
+
 export default function Index() {
+  const { votesMap } = useLoaderData<typeof loader>();
   const { language, setLanguage, t } = useLanguage();
   const { currentSound, isPlaying, play, stop } = useAudioPlayer();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<CategoryId | null>(null);
   const [downloadingId, setDownloadingId] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showRankings, setShowRankings] = useState(false);
+  const voteFetcher = useFetcher();
+
+  // Local state for optimistic updates
+  const [localVotes, setLocalVotes] = useState<Record<number, number>>(votesMap);
+
+  // Update local votes when loader data changes
+  useEffect(() => {
+    setLocalVotes(votesMap);
+  }, [votesMap]);
+
+  // Handle vote with optimistic update
+  const handleVote = async (soundId: number) => {
+    // Optimistic update
+    setLocalVotes(prev => ({
+      ...prev,
+      [soundId]: (prev[soundId] || 0) + 1,
+    }));
+
+    // Submit vote to backend
+    const formData = new FormData();
+    formData.append("soundId", soundId.toString());
+    voteFetcher.submit(formData, { method: "POST", action: "/api/vote" });
+  };
 
   // Handle file download
   const handleDownload = async (sound: Sound) => {
@@ -56,6 +112,15 @@ export default function Index() {
 
     return matchesSearch && matchesCategory;
   });
+
+  // Calculate top 20 sounds by votes
+  const topRankedSounds = [...sounds]
+    .map(sound => ({
+      ...sound,
+      votes: localVotes[sound.id] || 0,
+    }))
+    .sort((a, b) => b.votes - a.votes)
+    .slice(0, 20);
 
   // Toggle category filter (single selection)
   const toggleCategory = (categoryId: CategoryId) => {
@@ -117,6 +182,66 @@ export default function Index() {
             placeholder={t.search.placeholder}
             className="w-full max-w-2xl px-3 sm:px-4 py-2 sm:py-3 bg-ra2-black-lighter border-2 border-ra2-metal text-white rounded-lg focus:border-ra2-red focus:outline-none text-sm sm:text-base"
           />
+        </div>
+      </section>
+
+      {/* Rankings Section */}
+      <section className="bg-ra2-black-light border-y-2 border-ra2-metal py-4 md:py-6">
+        <div className="max-w-7xl mx-auto px-4">
+          <button
+            onClick={() => setShowRankings(!showRankings)}
+            className="w-full flex items-center justify-between text-left mb-4"
+          >
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold text-ra2-tesla-blue">
+                🏆 {t.ranking.title}
+              </h2>
+              <p className="text-ra2-metal text-sm md:text-base">{t.ranking.subtitle}</p>
+            </div>
+            <span className="text-ra2-red text-2xl">{showRankings ? '▲' : '▼'}</span>
+          </button>
+
+          {showRankings && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {topRankedSounds.map((sound, index) => {
+                const isCurrentlyPlaying = currentSound?.id === sound.id && isPlaying;
+
+                return (
+                  <div
+                    key={sound.id}
+                    className={clsx(
+                      "bg-ra2-black p-3 rounded border-2 transition-all",
+                      index < 3 ? "border-ra2-tesla-blue" : "border-ra2-metal"
+                    )}
+                  >
+                    <div className="flex items-start gap-2">
+                      <div className={clsx(
+                        "text-xl font-bold flex-shrink-0",
+                        index === 0 ? "text-yellow-400" : index === 1 ? "text-gray-300" : index === 2 ? "text-orange-400" : "text-ra2-metal"
+                      )}>
+                        #{index + 1}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <button
+                          onClick={() => isCurrentlyPlaying ? stop() : play(sound)}
+                          className="text-left w-full"
+                        >
+                          <h4 className="font-bold text-white text-sm truncate hover:text-ra2-red transition-colors">
+                            {sound.displayName}
+                          </h4>
+                        </button>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-ra2-tesla-blue text-sm font-bold">
+                            ⚡ {sound.votes} {t.ranking.votes}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </section>
 
@@ -276,19 +401,36 @@ export default function Index() {
                         </div>
                       </button>
 
-                      {/* Download button - always visible on mobile, hover on desktop */}
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleDownload(sound);
-                        }}
-                        disabled={downloadingId === sound.id}
-                        className="absolute top-2 right-2 px-2 sm:px-3 py-2 bg-ra2-metal hover:bg-ra2-metal-light active:bg-ra2-metal-dark text-white rounded font-bold transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100 z-10 disabled:opacity-50 disabled:cursor-wait min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 flex items-center justify-center"
-                        title={downloadingId === sound.id ? "Downloading..." : "Download"}
-                        aria-label="Download sound"
-                      >
-                        {downloadingId === sound.id ? "⏳" : "⬇️"}
-                      </button>
+                      {/* Action buttons container */}
+                      <div className="absolute top-2 right-2 flex gap-2 z-10 opacity-100 sm:opacity-0 sm:group-hover:opacity-100">
+                        {/* Upvote button */}
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleVote(sound.id);
+                          }}
+                          className="px-2 sm:px-3 py-2 bg-ra2-tesla-blue hover:bg-ra2-red active:bg-ra2-red-dark text-white rounded font-bold transition-all min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 flex items-center justify-center gap-1"
+                          title="Upvote"
+                          aria-label="Upvote sound"
+                        >
+                          <span>👍</span>
+                          <span className="text-xs">{localVotes[sound.id] || 0}</span>
+                        </button>
+
+                        {/* Download button */}
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleDownload(sound);
+                          }}
+                          disabled={downloadingId === sound.id}
+                          className="px-2 sm:px-3 py-2 bg-ra2-metal hover:bg-ra2-metal-light active:bg-ra2-metal-dark text-white rounded font-bold transition-all disabled:opacity-50 disabled:cursor-wait min-w-[44px] min-h-[44px] sm:min-w-0 sm:min-h-0 flex items-center justify-center"
+                          title={downloadingId === sound.id ? "Downloading..." : "Download"}
+                          aria-label="Download sound"
+                        >
+                          {downloadingId === sound.id ? "⏳" : "⬇️"}
+                        </button>
+                      </div>
                     </div>
                   );
                 })}

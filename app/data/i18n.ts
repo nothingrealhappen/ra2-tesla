@@ -18,6 +18,13 @@ export interface Translation {
     share: string;
     favorite: string;
     stop: string;
+    upvote: string;
+  };
+  ranking: {
+    title: string;
+    subtitle: string;
+    topSounds: string;
+    votes: string;
   };
   filter: {
     title: string;
@@ -51,6 +58,13 @@ export const translations: Record<Language, Translation> = {
       share: 'Share',
       favorite: 'Favorite',
       stop: 'Stop',
+      upvote: 'Upvote',
+    },
+    ranking: {
+      title: 'Top 20 Most Voted Sounds',
+      subtitle: 'Community favorites - vote for your favorite sounds!',
+      topSounds: 'Top Sounds',
+      votes: 'votes',
     },
     filter: {
       title: 'Filter by Category',
@@ -82,6 +96,13 @@ export const translations: Record<Language, Translation> = {
       share: '分享',
       favorite: '收藏',
       stop: '停止',
+      upvote: '点赞',
+    },
+    ranking: {
+      title: '最受欢迎的 20 个音效',
+      subtitle: '社区最爱 - 为你喜欢的音效投票！',
+      topSounds: '热门音效',
+      votes: '票',
     },
     filter: {
       title: '按类别筛选',

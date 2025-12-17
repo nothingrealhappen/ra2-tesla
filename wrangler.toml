@@ -3,8 +3,18 @@ compatibility_date = "2024-01-01"
 
 pages_build_output_dir = "./build/client"
 
+# KV Namespaces
+[[kv_namespaces]]
+binding = "SOUND_RANKINGS"
+id = "a058f542c9db4037a36992656a2dc85f"
+
 [env.production]
 name = "ra2-tesla"
+
+# KV Namespaces for production
+[[env.production.kv_namespaces]]
+binding = "SOUND_RANKINGS"
+id = "a058f542c9db4037a36992656a2dc85f"
 
 # Environment variables
 [env.production.vars]

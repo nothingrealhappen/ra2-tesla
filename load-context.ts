@@ -1,0 +1,13 @@
+import type { PlatformProxy } from "wrangler";
+
+type Cloudflare = Omit<PlatformProxy, "dispose">;
+
+declare module "@remix-run/cloudflare" {
+  interface AppLoadContext {
+    cloudflare: Cloudflare & {
+      env: {
+        SOUND_RANKINGS: KVNamespace;
+      };
+    };
+  }
+}
