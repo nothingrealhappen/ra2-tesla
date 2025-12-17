@@ -1,0 +1,805 @@
+MIX Files
+Inside ra2.mix you can find more .mix archives. The files are sorted by the .mix archive they are located in.
+
+cache.mix
+bombcurs.shp
+RA2-Bombcurs.png
+An unused bomb icon, similar to the Ivan bomb icon but with a different palette and the last frame appears with a skull. The last frame was to be used with remotely-detonatable Ivan bombs, but these were scrapped.
+
+wrench.shp
+RA2-Wrench.png
+Similar to the final version, but with a different palette.
+C&C-RA2-wrench.gif
+
+Tiberian Sun Leftovers
+As mentioned above, the respective palettes cannot be found in the Red Alert 2 files. The files in most cases use the animation palettes from Tiberian Sun, which appears to have been used for Red Alert 2's animations during development before switching to a unique palette.
+
+curtcurs.shp
+RA2-Curtcurs.png
+
+Early cursor for the Iron Curtain.
+
+dropdown.shp
+RA2-Dropdown.png
+Leftover interface graphics from Tiberian Sun's abandoned "Dropshop Loadout" feature.
+
+dropup.shp
+RA2-Dropup.png
+Leftover interface graphics from Tiberian Sun's abandoned "Dropshop Loadout" feature.
+
+poweroff.shp
+RA2-Poweroff.png
+Leftover graphic from Tiberian Sun. This would be overlaid on any buildings whose power had been deactivated. Presumably abandoned in Red Alert 2 whenever the ability to individually control building power was abandoned.
+C&C-RA2-poweroff.gif
+
+conquer.mix
+bbblelrg.shp
+RA2-Bbblelrg.png
+"Large" Bubbles, possibly for swimming units like Tanya or the SEAL, maybe even the Sub. Missing palette data.
+
+beacon.shp
+RA2-Beacon.png
+Dropship beacon animation from Tiberian Sun. Uses a Tiberian Sun palette.
+C&C-RA2-beacon.gif
+
+bomb.shp
+RA2-Bomb.png
+An unused projectile graphic from Tiberian Sun, where it also went unused.
+C&C-RA2-bomb.gif
+
+buildngz.shp
+RA2-Buildngz.png
+Never shown in-game, but is used to control how buildings display and overlap with each other. Supports buildings up to 396x477 pixels in size.
+
+chemisle.shp
+RA2-Chemisle.png
+Was used in the bonus crates in Tiberian Sun, where the earned premium would be a one-use Chemical Missile. Uses the Tiberian Sun animation palette.
+C&C-RA2-chemisle.gif
+
+chronobm.shp
+RA2-Chronobm.png
+Part of the original animation for the Chrono Sphere super weapon. This would have been tiled from the top of the screen and played with the exit vortex, but was later abandoned. Uses Tiberian Sun's animation palette, supporting the idea that Red Alert 2's animations were originally created in this palette before development of a unique colour set.
+C&C-RA2-chronobm.gif
+
+chronodb.shp
+RA2-Chronodb.png
+
+chronofs.shp
+RA2-Chronofs.png
+
+chronosb.shp
+RA2-Chronosb.png
+Original and crude graphic for the Chrono Sphere super weapon. Most likely placeholders. Uses Tiberian Sun's animation palette.
+
+civ1.shp
+The civilian has prone animations that go unused as she's crawls=no and firing animations that go unused as she's unarmed.
+
+
+crawl
+
+ 
+
+fireprone
+
+civ2.shp
+The civilian has prone animations that go unused as he's crawls=no and firing animations that go unused as he's unarmed.
+
+
+crawl
+
+ 
+
+fireprone
+
+civ3.shp
+The civilian has prone animations that go unused as he's crawls=no.
+
+
+crawl
+
+cleg.shp
+The chrono-legionnaire has a paradrop frame despite never being paradropped.
+
+C&C-RA2-cleg 0116.png
+
+cloak.shp
+RA2-Cloak.png
+Can be activated in rules.ini, and is obtained through bonus crates. It gives invisibility for any unit that touches the box. This was a crate feature from Tiberian Sun, where this animation was used, but the crate was presumably disabled in Red Alert 2 as "cloak" logic was adapted for underwater units (cloaked units will make the "sub appearing" sound rather than a (de)cloaking noise). Uses Tiberian Sun's animation palette.
+C&C-RA2-cloak.gif
+
+dbrs10sm.shp
+RA2-Dbrs10sm.png
+An unused debris animation, presumably representing an "ejected" human body.
+C&C-RA2-dbrs10sm.gif
+
+deso.shp
+The desolator has prone animations that go unused as he's fearless.
+
+
+crawl
+
+ 
+
+fireprone
+
+ 
+
+down
+
+ 
+
+up
+
+dlph.shp
+Dolphins have what is likely a cheer animation, however vehicles can't cheer.
+C&C-RA2-DolphinCheer.gif
+
+flakt.shp
+The flak trooper has prone animations that go unused as he's crawls=no.
+
+
+crawl
+
+ 
+
+fireprone
+
+ 
+
+down
+
+ 
+
+up
+
+josh.shp
+The monkey has a ranged attack animation of throwing a banana.
+
+C&C-RA2-Josh-fire.gif
+
+pentgen.shp
+A pentagon general likely intended for "Liberty". Is briefly reused in "Trick or Treaty" using only the walking animations.
+
+
+crawl
+
+ 
+
+die
+
+ 
+
+down
+
+ 
+
+fire
+
+ 
+
+fireprone
+
+ 
+
+idle
+
+ 
+
+up
+
+rock.shp
+Rocketeers have multiple unused animations. An alternate air death animation isn't used due to how rocketeers are programmed. A cheer animation only plays while they're on the ground, which only happens in "Mirage". Two ground death animations exist while due to the mechanics of rocketeers they immediately explode while dying on the ground. Rocketeers also have animations for being prone, which don't play due to being fearless.
+
+
+airdie2
+
+ 
+
+cheer
+
+ 
+
+die1
+
+ 
+
+die2
+
+ 
+
+down
+
+ 
+
+crawl
+
+ 
+
+fireprone
+
+ 
+
+paradrop
+
+s_clsn42.png
+The explosion animation for the cut howitzer. It plays in-game but expects the Tiberian Sun palette so it displays incorrect, here it is displayed with the correct palette.
+
+C&C-RA2-s clsn42.gif
+
+sqdg_x.shp
+Animations for the giant squid attack, uses the Tiberian Sun palette.
+
+
+N
+
+ 
+
+NW
+
+ 
+
+W
+
+ 
+
+SW
+
+ 
+
+S
+
+ 
+
+SE
+
+ 
+
+E
+
+ 
+
+NE
+
+sqdp.shp
+A squid "jump" projectile. The squid likely once attacked as terror drones and would lunge themselves at ships from distance. Uses Tiberian Sun palette.
+
+C&C-RA2-sqdp.gif
+
+trst.shp
+The terrorist has a paradrop frame despite never being paradropped.
+
+
+paradrop
+
+ 
+
+deploy
+
+ 
+
+fireup
+
+vladimir.shp
+Vladimir. He's referenced in "Desecration" where he'd walk in front of the White House, likely when it's captured or destroyed. This was probably disabled as the post-mission cutscene shows him hiding in the Oval Office.
+
+
+crawl
+
+ 
+
+die1
+
+ 
+
+die2
+
+ 
+
+down
+
+ 
+
+fire
+
+ 
+
+fireprone
+
+ 
+
+idle1
+
+ 
+
+idle2
+
+ 
+
+ready
+
+ 
+
+up
+
+ 
+
+walk
+
+Tiberian Sun Leftovers
+Tiberian Sun's ion cannon.
+C&C-RA2-ionbeam.gif
+
+Unused Mouse Cursors
+Located in mouse.shp is all mouse cursors.
+
+Cursor	Potential Purpose	Cursor	Potential Purpose
+C&C-RA2-Mouse78.gif
+Desolator Deploy cursor	
+C&C-RA2-Mouse249.gif
+"Sonar Pulse" cursor
+C&C-RA2-Mouse88.gif
+Tiberian Sun "No Move" Cursor	
+C&C-RA2-Mouse269.gif
+Rally Point cursor
+C&C-RA2-Mouse209.gif
+Mind control	
+C&C-RA2-Mouse432.gif
+Cannot Rally Point cursor
+C&C-RA2-Mouse431.gif
+Cannot mind control	
+C&C-RA2-Mouse299.gif
+Detonator, Used for Ivan's unused "Click to detonate" function.
+C&C-RA2-Mouse214.gif
+Dolphin remove squid	
+C&C-RA2-Mouse329.gif
+Naval Move
+C&C-RA2-Mouse219.gif
+Crush infantry	
+C&C-RA2-Mouse345.gif
+Cannot Naval move
+C&C-RA2-Mouse199.gif
+Spy disguise kit	
+C&C-RA2-Mouse357.gif
+Animated chronoshift
+C&C-RA2-Mouse224.gif
+Spy steal tech	
+C&C-RA2-Mouse413.gif
+Transport Deploy cursor
+C&C-RA2-Mouse229.gif
+Spy disconnect power	
+C&C-RA2-Mouse422.gif
+Planned to be used for Cloning Vats "Reverse Engineer" tech.
+(As it stands, sending an infantry to the cloning vats in RA2 gives a "Grinding" effect ala Yuri's revenge)
+
+C&C-RA2-Mouse239.gif
+GI deploy
+generic.mix
+gggate_b.shp / gggatezb.shp
+Leftover gate sprites from Tiberian Sun. Frames for every animation exist and the sprites have been stretched up slightly to accommodate Red Alert 2's slightly larger isometric grid. Still rendered in Tiberian Sun's unit palette.
+
+ggspot.shp / ggspotmk.shp
+RA2Ggspot.png
+Unused tower sprites from Tiberian Sun. Like the above, frames for every animation exist and the sprites were stretched up slightly. These were also rendered in Tiberian Sun's unit palette, which differs from Red Alert 2's only by the inclusion of a few extra colours - these appear as solid magenta in Red Alert 2's palette, as seen on the side of this tower sprite.
+
+ngcnstdm.shp
+RA2Ngcnstdm.png
+Unused destruction animation for the Soviet Construction Yard. The Construction Yard design is mirrored from that used in the final game, but resembles that used on the rear of the Red Alert 2 box art, indicating a leftover pre-release graphic.
+C&C-RA2-ngcnstdm.gif
+
+ggcnstdm.shp
+RA2Ggcnstdm.png
+Unused destruction animation for the Allied Construction Yard.
+C&C-RA2-ggcnstdm.gif
+
+ggcsphdm.shp
+Chronosphere destruction animation.
+C&C-RA2-ggcsphdm.gif
+
+ggpiledm.shp
+Allied barracks destruction animation. Uses the old e3 model with the pillar being in front of the barracks instead of behind.
+C&C-RA2-ggpiledm.gif
+
+ggprisdm.shp
+Prism tower destruction animation.
+C&C-RA2-ggprisdm.gif
+
+ngtsladm.shp
+Tesla coil destruction animation.
+C&C-RA2-ngtsladm.gif
+
+ggcnst_d.shp
+RA2Ggcnst d.png
+Leftover Construction Yard crane animation from Tiberian Sun.
+
+isogen.mix
+cgpars11d.shp
+RA2-Cgpars11d.png
+
+A possible test animation for destruction of the Arc de Triomphe. The model used is very different from the final version.
+C&C-RA2-cgpars11d.gif
+
+local.mix
+logo.pcx
+LogoRA2u.png
+Unused background graphics for a menu.
+
+multi.pcx
+RA2Multi.png
+Placeholder background graphics for a menu.
+
+Unused Tiberian Sun-style loading screens
+Unused loading screens using a Tiberian Sun palette. There are three resolutions available, and two identical loading screens per resolution per faction. Unclear whether they were intended as a placeholder, or are remnants of a period when Red Alert 2 was supposed to reuse the Tiberian Sun loading screen logic and layout.
+
+
+Load600a.pcx
+
+ 
+
+Load600c.pcx
+
+Tiberian Sun Leftovers
+Dbak6440.pcx
+Dbak6440.png
+Leftover background graphic.
+
+Mpscore.pcx
+RA2Mpscore.png
+GDI background graphic.
+
+Gdii.pcx
+RA2Gdii.png
+Tiny GDI icon. Most likely originates from the development of country "flags" in the Skirmish menu. GDI and Nod were adapted in the rules.ini files into the Allies and Soviets respectively. These are still referred to by their Tiberian Sun titles at certain points in the game files.
+
+Nodi.pcx
+RA2Nodi.png
+Tiny NOD icon.
+
+drop0001.shp - drop0004.shp
+Drop0001.png
+Background graphics, for an unused feature in Tiberian Sun which enabled the player to choose their own reinforcements prior to certain missions.
+
+isotemp.mix
+cugard.shp
+C&C-RA2-cugard03 0000.png
+
+An unused guard tower, has no unique graphics for damaged or garrisoned.
+
+curus02g.shp
+An unused Russian decoration.
+
+
+Regular
+
+ 
+
+Damaged
+
+ 
+
+Garrisoned
+
+dtunn
+Tunnel graphics to allow units to go through cliffs. The tunnel system existed in Tiberian Sun but wasn't completely in Red Alert 2.
+
+C&C-RA2-Tempdtunn01.png
+ 
+C&C-RA2-Tempdtunn02.png
+ 
+C&C-RA2-Tempdtunn03.png
+ 
+C&C-RA2-Tempdtunn04.png
+Tiberian Sun Leftovers
+The build animation of the cut plug-in based GDI radar.
+C&C-RA2-TSCutGDIRadar.gif
+
+isosnow.mix
+cachig05d.shp
+RA2-Cachig05d.png
+C&C-RA2-cachig05d.gif
+
+cacity01.shp
+
+In-game
+RA2-Cacity01 0000.png
+
+cacity02.shp
+
+In-game
+RA2-Cacity02.png
+
+cacity03.shp
+
+In-game
+RA2-Cacity03 0000.png
+
+Leftover civilian building from Tiberian Sun.
+
+cacity04.shp
+
+In-game
+RA2-Cacity04.png
+
+cacity05.shp
+
+In-game
+RA2-Cacity05.png
+
+The Battersea Power Station as a game graphic. This is the structure on which the original Red Alert's (Advanced) Power Plant was based.
+
+cacity06.shp
+
+In-game
+RA2-Cacity06.png
+
+cagard.shp
+C&C-RA2-cagard03 0000.png
+
+An unused guard tower, has no unique graphics for damaged or garrisoned.
+
+capars12d.shp
+RA2-Capars12d 0000.png
+C&C-RA2-Capars12d.gif
+
+catex02.shp
+RA2-Catex02.png
+
+carus02g.shp
+An unused Russian decoration.
+
+
+Regular
+
+ 
+
+Damaged
+
+ 
+
+Garrisoned
+
+dtunn
+Tunnel graphics to allow units to go through cliffs. The tunnel system existed in Tiberian Sun but wasn't completely in Red Alert 2.
+
+C&C-RA2-Snowdtunn01.png
+ 
+C&C-RA2-Snowdtunn02.png
+ 
+C&C-RA2-Snowdtunn03.png
+ 
+C&C-RA2-Snowdtunn04.png
+isourb.mix
+dtunn
+Tunnel graphics to allow units to go through cliffs. The tunnel system existed in Tiberian Sun but wasn't completely in Red Alert 2.
+
+C&C-RA2-Urbdtunn01.png
+ 
+C&C-RA2-Urbdtunn02.png
+ 
+C&C-RA2-Urbdtunn03.png
+ 
+C&C-RA2-Urbdtunn04.png
+urban.mix
+railbrdg.urb
+Red Alert 2 - Railbrdg.urb.png
+
+An older version of a high bridge with rail, this is a leftover from Tiberian Sun, but maybe it was intended for RA2 to have trains once..
+
+Tiberian Sun Leftovers
+veinhole.urb
+RA2 - Veinhole.urb.png
+
+A urban version for this graphic is present in Tiberian Sun. But the urban environment doesn't exist in TS.
+
+Red Alert Leftovers
+mslomake.urb
+RA2 - mslomake.urb.png
+
+The Allied Missile Silo of Red Alert still lost for many years here.
+
+load.mix
+ls640obs.shp
+RA2-Ls640obs.png
+
+Loading screen image intended to be used for Observer players in online games.
+
+
+
+neutral.mix
+RA2Titlelg.png 'titlelg.pcx' Unused title graphics.
+
+temperat.mix
+Fence01.png
+fence01.tem - fence22.tem: Placeholder graphics for unused fence sprites.
+
+RA2Hbox.png
+hbox.tem - hboxmake.tem: Leftover sprites of Pillbox from Red Alert, frames for all animations exist. (used palette: isotem.pal)
+
+MineRA.png
+mine.tem: Leftover sprite of oredrill from Red Alert. (used palette: isotem.pal)
+
+RA2Mslo.png
+mslo.tem / mslomake.tem: Leftover sprite of Nukesilo from Red Alert, frames for all animations exist. (used palette: isotem.pal)
+
+RA2Ovrpsb11.png
+ovrpsb11.tem / ovrpsb16.tem: Placeholder graphics for unused bridge pieces.
+
+
+
+sidec01.mix
+button
+Buttons for the control bar on the bottom of the screen, Allies side. These can all be implemented by editing ui.ini, except for auto-deploy, which was never finished.
+
+
+Team03
+
+ 
+C&C-RA2-Alliesbutton02 0001.png
+ 
+
+AttackMove
+
+ 
+C&C-RA2-Alliesbutton05 0001.png
+ 
+
+Stop
+
+ 
+C&C-RA2-Alliesbutton08 0001.png
+ 
+
+Cheer
+
+ 
+C&C-RA2-Alliesbutton10 0001.png
+ 
+
+AutoDeploy
+
+ 
+C&C-RA2-Alliesbutton11 0001.png
+sidec02.mix
+button
+Buttons for the control bar on the bottom of the screen, Soviet side. These can all be implemented by editing ui.ini, except for auto-deploy, which was never finished.
+
+
+Team03
+
+ 
+C&C-RA2-Sovietbutton02 0001.png
+ 
+
+AttackMove
+
+ 
+C&C-RA2-Sovietbutton05 0001.png
+ 
+
+Stop
+
+ 
+C&C-RA2-Sovietbutton08 0001.png
+ 
+
+Cheer
+
+ 
+C&C-RA2-Sovietbutton10 0001.png
+ 
+
+AutoDeploy
+
+ 
+C&C-RA2-Sovietbutton11 0001.png
+snow.mix
+Gafwll.png
+gafwll.shp: Graphics for the Nod Walls in Tiberian Sun. The Nod Wall was likely just a placeholder - "gafwll" was planned to be adapted into a France-specific wall type in Red Alert 2, but this was later abandoned.
+
+RA2Gold01.png
+gold01.tem - gold04.tem: Leftover graphics for gold from Red Alert.
+
+conqmd.mix
+boris.shp
+Boris has a crawl animations that go unused because he's Crawls=no. Also has an old version of his secondary attack.
+
+
+crawl
+
+ 
+
+fireprone
+
+ 
+
+down
+
+ 
+
+up
+
+ 
+
+secondaryfire
+
+lunr.shp
+The cosmonaut has walking animations that are normally unseen as they don't exist in any level at the same time as spies.
+C&C-RA2-CosmonautWalking.gif
+
+They also have cheer animations that go unused as they need to be on the ground to do so.
+C&C-RA2-CosmonautCheering.gif
+
+genermd.mix
+The psychic tower is meant to light up when it attacks.
+C&C-YR-ygpsyt b.gif
+
+isogenmd.mix
+cgal02.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-cgla02-0000.pngC&C-RA2-cgla02-0001.png
+C&C-RA2-cgla02-0002.pngC&C-RA2-cgla02-0003.png
+
+isourbmd.mix
+cula02.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-cula02-0000.pngC&C-RA2-cula02-0001.png
+C&C-RA2-cula02-0002.pngC&C-RA2-cula02-0003.png
+
+cumoon01.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-cumoon01-0000.pngC&C-RA2-cumoon01-0001.png
+C&C-RA2-cumoon01-0002.pngC&C-RA2-cumoon01-0003.png
+
+cusydn01.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-cusydn01-0000.pngC&C-RA2-cusydn01-0001.png
+C&C-RA2-cusydn01-0002.pngC&C-RA2-cusydn01-0003.png
+
+isolunmd.mix
+clseat01.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-clseat01-0000.pngC&C-RA2-clseat01-0001.png
+C&C-RA2-clseat01-0002.pngC&C-RA2-clseat01-0003.png
+
+clsydn02.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-clsydn02-0000.pngC&C-RA2-clsydn02-0001.png
+C&C-RA2-clsydn02-0002.pngC&C-RA2-clsydn02-0003.png
+
+clsydn03.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-clsydn03-0000.pngC&C-RA2-clsydn03-0001.png
+C&C-RA2-clsydn03-0002.pngC&C-RA2-clsydn03-0003.png
+
+cltran03.shp
+Placeholder images for a building, front, damaged, garrisoned, rubble.
+C&C-RA2-cltran03-0000.pngC&C-RA2-cltran03-0001.png
+C&C-RA2-cltran03-0002.pngC&C-RA2-cltran03-0003.png
+
+lunrk2.shp
+A lunar rock.
+C&C-RA2-lunrk2.png
+
+Unused Cameos
+RA2-Spyuico.pngRA2-Adoguico.pngRA2-Doguico.pngRA2-Ivanuico.pngRA2-Ivncuico.pngC&C-RA2-TerroristVetCameo.pngC&C-RA2-ChronominerVetCameo.pngC&C-RA2-RobotTankVetCameo.pngRA2Mcvuico.pngRA2-Smcvuico.pngC&C-RA2-YuriMCVVetCameo.pngC&C-RA2-MasterMindVetCameo.pngC&C-RA2-ChaosDroneVetCameo.png
+These are all veteran icons that are programmed to appear when a spy infiltrates an enemy production building, allowing the player to directly construct veteran units. However, these units are unable to actually be promoted in the course of normal gameplay, and so the icons are never seen - the dogs are purposely set to not gain experience levels; Ivans cannot gain experience due to the programming quirks of their weapon; and both the MCVs and the Spy do not have any weaponry to allow them to even gain experience. In any case, the icons look unfinished, given the size of the text compared to the finished game's icons, and the Crazy Ivan veteran icon uses a different image to the vanilla icon.
+
+RA2-Xxicon.png
+This icon is used as a placeholder for units which do not have their own build icon, such as civilian props and mission-specific special units. It is never seen in the course of normal gameplay, unless playing on a custom map which allows the construction of these civilian or unbuildable units.
+
+C&C-RA2-YuriEngineerCameo.pngC&C-RA2-YuriEngineerVetCameo.png
+Yuri engineers have their own cameo that goes unused as they use the ENGINEER image instead of the correct YENGINEER image.
+
+Used	Unused	Veteran
+C&C-RA2-EngineerCameo.png	C&C-RA2-EngineerUnusedCameo.png	C&C-RA2-EngineerUnusedVetCameo.png
+An older version of the engineer cameo, under the name "AENGICON" vs the used "ENGNICON", includes its own veteran version too. Seems to include the Allies insignia on the toolbox.
+
+C&C-RA2-MiGCameo.png
+MiGs have their own cameo that goes unused as they're not buildable and only obtainable from Boris' airstrike.
+
+C&C-RA2-CosmonautVetCameo.png
+The cosmonaut's veteran icon goes unused as there are no allied players in the one level where it's available, the cameo also displays an old name for it.
+
+C&C-RA2-ConYardCameo.pngC&C-RA2-ChronoPrisonCameo.png
+Placeholder cameos for the construction yard and the chrono prison, a cut concept.
+
+There are other unused cameos using the Tiberian Sun model used for cameo. You can see some icons early in the RA2 for GAP generator, Dolphin, Constructyard, an early version of conscript, a Soviet helicopter "Apache" which is unused and a Tesla Coil. Other cameos were used in Tiberian Sun.

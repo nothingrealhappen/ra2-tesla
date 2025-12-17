@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* RA2 Red Colors */
+  --color-ra2-red: #820303;
+  --color-ra2-red-dark: #a00404;
+  --color-ra2-red-darker: #600202;
+
+  /* RA2 Black Colors */
+  --color-ra2-black: #000000;
+  --color-ra2-black-light: #1A1A1A;
+  --color-ra2-black-lighter: #2D2D2D;
+
+  /* RA2 Metal Colors */
+  --color-ra2-metal: #8B8B8B;
+  --color-ra2-metal-light: #C0C0C0;
+  --color-ra2-metal-dark: #5A5A5A;
+
+  /* Tesla Colors */
+  --color-ra2-tesla-blue: #00FFFF;
+  --color-ra2-tesla-purple: #9900FF;
+
+  /* Font Families */
+  --font-ra2: 'Exo 2', 'Orbitron', sans-serif;
+
+  /* Box Shadows */
+  --shadow-ra2-panel: 0 0 0 2px #5A5A5A, 0 0 0 4px #8B8B8B, inset 0 2px 4px rgba(255,255,255,0.2);
+  --shadow-ra2-button: 0 0 10px rgba(130,3,3,0.5), inset 0 1px 2px rgba(255,255,255,0.3);
+  --shadow-tesla-glow: 0 0 20px rgba(0,255,255,0.6), 0 0 40px rgba(0,255,255,0.4);
+
+  /* Animations */
+  --animate-electric-pulse: electric-pulse 1.5s ease-in-out infinite;
+  --animate-radar-sweep: radar-sweep 4s linear infinite;
+  --animate-spark: spark 0.5s ease-out;
+
+  @keyframes electric-pulse {
+    0%, 100% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+    50% {
+      opacity: 0.8;
+      filter: brightness(1.2);
+    }
+  }
+
+  @keyframes radar-sweep {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spark {
+    0% {
+      opacity: 1;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+}

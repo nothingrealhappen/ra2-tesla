@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:tcrf.net)",
+      "Bash(npx create-remix@latest . --template remix-run/remix/templates/cloudflare-pages --yes --install)",
+      "Bash(npx create-react-router@latest . --template remix-run/remix/templates/cloudflare-pages --yes --install)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(pnpm init:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm dev)",
+      "Bash(pnpm build:*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs"
+    ]
+  }
+}
