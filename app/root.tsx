@@ -10,6 +10,7 @@ import { LanguageProvider } from "./components/LanguageProvider";
 import styles from "./styles/tailwind.css?url";
 
 export const links: LinksFunction = () => [
+  { rel: "icon", type: "image/png", href: "/favicon.png" },
   { rel: "stylesheet", href: styles },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
