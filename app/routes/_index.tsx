@@ -21,6 +21,29 @@ export default function Index() {
   const { currentSound, isPlaying, play, stop } = useAudioPlayer();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<CategoryId[]>([]);
+  const [downloadingId, setDownloadingId] = useState<string | null>(null);
+
+  // Handle file download
+  const handleDownload = async (sound: Sound) => {
+    try {
+      setDownloadingId(sound.id);
+      const response = await fetch(sound.r2Url);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = sound.filename;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error('Download failed:', error);
+      alert('Download failed. Please try again.');
+    } finally {
+      setDownloadingId(null);
+    }
+  };
 
   // Filter sounds
   const filteredSounds = sounds.filter(sound => {
@@ -189,14 +212,17 @@ export default function Index() {
                       </button>
 
                       {/* Download button - appears on hover */}
-                      <a
-                        href={sound.r2Url}
-                        download={sound.filename}
-                        onClick={(e) => e.stopPropagation()}
-                        className="absolute top-2 right-2 px-3 py-2 bg-ra2-metal hover:bg-ra2-metal-light text-white rounded font-bold transition-all opacity-0 group-hover:opacity-100 z-10"
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleDownload(sound);
+                        }}
+                        disabled={downloadingId === sound.id}
+                        className="absolute top-2 right-2 px-3 py-2 bg-ra2-metal hover:bg-ra2-metal-light text-white rounded font-bold transition-all opacity-0 group-hover:opacity-100 z-10 disabled:opacity-50 disabled:cursor-wait"
+                        title={downloadingId === sound.id ? "Downloading..." : "Download"}
                       >
-                        ⬇️
-                      </a>
+                        {downloadingId === sound.id ? "⏳" : "⬇️"}
+                      </button>
                     </div>
                   );
                 })}
