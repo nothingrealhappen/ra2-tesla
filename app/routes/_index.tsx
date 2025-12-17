@@ -20,6 +20,12 @@ export const meta: MetaFunction = () => {
 
 export async function loader({ context }: LoaderFunctionArgs) {
   try {
+    // Check if Cloudflare context is available (it won't be in dev mode with vite:dev)
+    if (!context?.cloudflare?.env?.SOUND_RANKINGS) {
+      console.warn("KV namespace not available - running without vote data");
+      return json({ votesMap: {} });
+    }
+
     const kv = context.cloudflare.env.SOUND_RANKINGS;
 
     // Fetch votes for all sounds
@@ -55,7 +61,6 @@ export default function Index() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryId | null>(null);
   const [downloadingId, setDownloadingId] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [showRankings, setShowRankings] = useState(false);
   const voteFetcher = useFetcher();
 
   // Local state for optimistic updates
@@ -188,60 +193,52 @@ export default function Index() {
       {/* Rankings Section */}
       <section className="bg-ra2-black-light border-y-2 border-ra2-metal py-4 md:py-6">
         <div className="max-w-7xl mx-auto px-4">
-          <button
-            onClick={() => setShowRankings(!showRankings)}
-            className="w-full flex items-center justify-between text-left mb-4"
-          >
-            <div>
-              <h2 className="text-xl md:text-2xl font-bold text-ra2-tesla-blue">
-                🏆 {t.ranking.title}
-              </h2>
-              <p className="text-ra2-metal text-sm md:text-base">{t.ranking.subtitle}</p>
-            </div>
-            <span className="text-ra2-red text-2xl">{showRankings ? '▲' : '▼'}</span>
-          </button>
+          <div className="mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-ra2-tesla-blue">
+              🏆 {t.ranking.title}
+            </h2>
+            <p className="text-ra2-metal text-sm md:text-base">{t.ranking.subtitle}</p>
+          </div>
 
-          {showRankings && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {topRankedSounds.map((sound, index) => {
-                const isCurrentlyPlaying = currentSound?.id === sound.id && isPlaying;
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {topRankedSounds.map((sound, index) => {
+              const isCurrentlyPlaying = currentSound?.id === sound.id && isPlaying;
 
-                return (
-                  <div
-                    key={sound.id}
-                    className={clsx(
-                      "bg-ra2-black p-3 rounded border-2 transition-all",
-                      index < 3 ? "border-ra2-tesla-blue" : "border-ra2-metal"
-                    )}
-                  >
-                    <div className="flex items-start gap-2">
-                      <div className={clsx(
-                        "text-xl font-bold flex-shrink-0",
-                        index === 0 ? "text-yellow-400" : index === 1 ? "text-gray-300" : index === 2 ? "text-orange-400" : "text-ra2-metal"
-                      )}>
-                        #{index + 1}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <button
-                          onClick={() => isCurrentlyPlaying ? stop() : play(sound)}
-                          className="text-left w-full"
-                        >
-                          <h4 className="font-bold text-white text-sm truncate hover:text-ra2-red transition-colors">
-                            {sound.displayName}
-                          </h4>
-                        </button>
-                        <div className="flex items-center gap-2 mt-1">
-                          <span className="text-ra2-tesla-blue text-sm font-bold">
-                            ⚡ {sound.votes} {t.ranking.votes}
-                          </span>
-                        </div>
+              return (
+                <div
+                  key={sound.id}
+                  className={clsx(
+                    "bg-ra2-black p-3 rounded border-2 transition-all",
+                    index < 3 ? "border-ra2-tesla-blue" : "border-ra2-metal"
+                  )}
+                >
+                  <div className="flex items-start gap-2">
+                    <div className={clsx(
+                      "text-xl font-bold flex-shrink-0",
+                      index === 0 ? "text-yellow-400" : index === 1 ? "text-gray-300" : index === 2 ? "text-orange-400" : "text-ra2-metal"
+                    )}>
+                      #{index + 1}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <button
+                        onClick={() => isCurrentlyPlaying ? stop() : play(sound)}
+                        className="text-left w-full"
+                      >
+                        <h4 className="font-bold text-white text-sm truncate hover:text-ra2-red transition-colors">
+                          {sound.displayName}
+                        </h4>
+                      </button>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-ra2-tesla-blue text-sm font-bold">
+                          ⚡ {sound.votes} {t.ranking.votes}
+                        </span>
                       </div>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-          )}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 

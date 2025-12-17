@@ -1,4 +1,4 @@
-import { vitePlugin as remix } from "@remix-run/dev";
+import { vitePlugin as remix, cloudflareDevProxyVitePlugin } from "@remix-run/dev";
 import { defineConfig } from "vite";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
@@ -9,6 +9,7 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [
+    cloudflareDevProxyVitePlugin(),
     tailwindcss(),
     remix({
       future: {

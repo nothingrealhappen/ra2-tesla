@@ -24,7 +24,9 @@
       "Bash(node generate-sounds.cjs:*)",
       "Bash(node:*)",
       "Bash(npx tsc:*)",
-      "Bash(pnpm run build:*)"
+      "Bash(pnpm run build:*)",
+      "Bash(pnpm list:*)",
+      "Bash(curl:*)"
     ]
   }
 }
